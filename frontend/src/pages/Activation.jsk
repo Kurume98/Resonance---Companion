@@ -1,0 +1,27 @@
+import React, { useState, useContext } from 'react';
+import { ResonanceContext } from '../context/ResonanceContext';
+
+const ActivationPanel = () => {
+  const [phase, setPhase] = useState('');
+  const { activateScroll } = useContext(ResonanceContext);
+
+  const handleActivation = () => {
+    if (!phase) return;
+    activateScroll(phase);
+    setPhase('');
+  };
+
+  return (
+    <div className="activation-panel">
+      <input
+        type="text"
+        placeholder="Enter Scroll Phase (e.g., planting)"
+        value={phase}
+        onChange={(e) => setPhase(e.target.value)}
+      />
+      <button onClick={handleActivation}>Activate Scroll</button>
+    </div>
+  );
+};
+
+export default ActivationPanel;

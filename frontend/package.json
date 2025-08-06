@@ -1,0 +1,26 @@
+{
+  "name": "resonance-frontend",
+  "version": "1.0.0",
+  "description": "Frontend interface of the Resonance Companion — Vite + React",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [
+    "resonance",
+    "companion",
+    "frontend",
+    "scroll"
+  ],
+  "author": "Kurume Augustine & Waqar",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^18.3.0",
+    "react-dom": "^18.3.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.1.0",
+    "vite": "^4.5.0"
+  }
+}
