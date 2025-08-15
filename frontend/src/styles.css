@@ -178,3 +178,153 @@ html {
   box-shadow: 0 0 8px rgba(142, 68, 173, 0.5);
   background-color: rgba(255, 255, 255, 0.25);
 }
+/* ===== Activation Panel ===== */
+.activation-panel {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.activation-panel input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background: #f9f9f9;
+  font-size: 14px;
+}
+
+.activation-panel button {
+  padding: 10px 16px;
+  background-color: #4cafef;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.activation-panel button:hover {
+  background-color: #379ad9;
+}
+
+/* ===== Mood Orb Styling ===== */
+.mood-orb {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin: 0 auto;
+  background: radial-gradient(circle at center, #ccc, #999);
+  transition: background 0.5s ease, box-shadow 0.5s ease;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.mood-orb.happy {
+  background: radial-gradient(circle at center, #ffeb3b, #fbc02d);
+  box-shadow: 0 0 15px #ffeb3b;
+}
+
+.mood-orb.sad {
+  background: radial-gradient(circle at center, #64b5f6, #1e88e5);
+  box-shadow: 0 0 15px #64b5f6;
+}
+
+.mood-orb.neutral {
+  background: radial-gradient(circle at center, #e0e0e0, #9e9e9e);
+  box-shadow: 0 0 15px #e0e0e0;
+}
+
+/* ===== Emotional Arc ===== */
+.emotional-arc {
+  display: flex;
+  gap: 6px;
+  margin-top: 20px;
+}
+
+.emotional-point {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  transition: background 0.3s ease;
+}
+
+.emotional-point.happy {
+  background: #ffeb3b;
+}
+
+.emotional-point.sad {
+  background: #64b5f6;
+}
+
+.emotional-point.neutral {
+  background: #9e9e9e;
+}
+/* === Mood Orb Styling === */
+.mood-orb {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin: 0 auto;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+  transition: background-color 0.5s ease, box-shadow 0.5s ease;
+}
+
+.mood-orb.happy {
+  background-color: #ffe066;
+  box-shadow: 0 0 25px rgba(255, 224, 102, 0.8);
+}
+
+.mood-orb.sad {
+  background-color: #74c0fc;
+  box-shadow: 0 0 25px rgba(116, 192, 252, 0.8);
+}
+
+.mood-orb.angry {
+  background-color: #ff6b6b;
+  box-shadow: 0 0 25px rgba(255, 107, 107, 0.8);
+}
+
+.mood-orb.neutral {
+  background-color: #ced4da;
+  box-shadow: 0 0 25px rgba(206, 212, 218, 0.8);
+}
+
+/* === Emotional Arc Styling === */
+.emotional-arc {
+  display: flex;
+  gap: 8px;
+  margin-top: 15px;
+  justify-content: center;
+}
+
+.arc-point {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.arc-point.happy {
+  background-color: #ffe066;
+}
+
+.arc-point.sad {
+  background-color: #74c0fc;
+}
+
+.arc-point.angry {
+  background-color: #ff6b6b;
+}
+
+.arc-point.neutral {
+  background-color: #ced4da;
+}
+
+.arc-point:hover {
+  transform: scale(1.2);
+}

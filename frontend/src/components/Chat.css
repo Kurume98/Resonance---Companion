@@ -1,0 +1,78 @@
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  background: #f9f8f7;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.mood-orb {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: auto;
+  margin-bottom: 12px;
+  transition: background 0.5s ease;
+}
+
+.mood-orb.neutral { background: gray; }
+.mood-orb.happy { background: yellow; }
+.mood-orb.calm { background: lightblue; }
+.mood-orb.sad { background: blue; }
+.mood-orb.angry { background: red; }
+
+.emotional-arc {
+  height: 6px;
+  background: #ddd;
+  border-radius: 3px;
+  margin-bottom: 12px;
+  overflow: hidden;
+}
+.arc-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #00f260, #0575e6);
+  transition: width 0.4s ease;
+}
+
+.chat-history {
+  flex: 1;
+  overflow-y: auto;
+  margin-bottom: 12px;
+}
+.message {
+  padding: 8px 12px;
+  margin: 6px 0;
+  border-radius: 6px;
+  max-width: 80%;
+}
+.message.user {
+  background: #d1ffd6;
+  align-self: flex-end;
+}
+.message.bot {
+  background: #ececec;
+  align-self: flex-start;
+}
+
+.chat-input {
+  display: flex;
+  gap: 8px;
+}
+.chat-input input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+.chat-input button {
+  padding: 10px 16px;
+  background: #0575e6;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}

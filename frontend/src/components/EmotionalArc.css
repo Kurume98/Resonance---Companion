@@ -1,0 +1,25 @@
+.emotional-arc {
+  margin-top: 20px;
+  background: rgba(0,0,0,0.05);
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.arc-placeholder {
+  font-style: italic;
+  color: #888;
+  text-align: center;
+}
+.emotional-arc {
+  display: flex;
+  margin-top: 10px;
+  height: 12px;
+  border-radius: 6px;
+  overflow: hidden;
+  background-color: #f0f0f0;
+}
+
+.arc-segment {
+  flex: 1;
+  transition: background-color 0.3s ease;
+}
